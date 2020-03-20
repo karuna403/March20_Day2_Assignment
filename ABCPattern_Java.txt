@@ -1,0 +1,46 @@
+public class ABCPattern_Java {
+    public static void main(String args[]) {
+      int i=0;
+      int n=70;
+      
+     
+     for(i=n; i>=65; i--){
+         
+         for(int j=65; j<=n; j++){
+             
+             if(j>i){
+                 System.out.print(" ");
+             }
+            else{
+                 if(j==n){
+                     continue;
+                 }
+                 else{
+             char c=(char)j;
+             System.out.print(c);
+             }
+             }
+             }
+         if(i==n){
+             System.out.print("F");
+         }
+         for(int k=n; k>=65; k--){
+         if(k>i||k==n){
+             if(k==n){
+             continue;
+             }
+             System.out.print(" ");
+         }
+            
+            else{
+             char d=(char)k;
+             System.out.print(d);
+                 }
+         
+     }
+      
+     System.out.println();
+}
+        
+    }
+}
